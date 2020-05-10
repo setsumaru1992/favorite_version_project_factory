@@ -1,0 +1,4 @@
+/workspace/*
+!/workspace/
+!/workspace/scripts/
+!/workspace/emptyfile_for_keeping_container_alive
