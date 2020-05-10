@@ -9,7 +9,14 @@ $ docker-compose up
 
 # 別ターミナル
 $ docker exec -it node_app_factory bash
+
+# dockerコンテナ
 $ ./scripts/create_next_prj.sh (プロジェクト名)
+$ exit
+
+# ローカルターミナル
+$ sudo chown -R (ユーザ名):(ユーザ名) (プロジェクト名)
+$ mv (プロジェクト名) (好きなところ)
 ```
 
 アプリケーションが出来上がったら自身のローカルの好きな場所に移動して、実行したり、Dockerのマウントボリュームにしたりして使ってください
