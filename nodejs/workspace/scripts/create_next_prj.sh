@@ -33,6 +33,8 @@ install_libraries () {
   log_this_script_message "必要なライブラリをインストールします"
   $this_script_dir/yarn_add_graphql_mod.sh
   $this_script_dir/yarn_add_useful_mod.sh
+  $this_script_dir/yarn_add_typescript_mod.sh
+  $this_script_dir/yarn_add_react_native_web_mod.sh
 }
 
 main "$1"

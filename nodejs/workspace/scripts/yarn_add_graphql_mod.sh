@@ -6,7 +6,11 @@ this_script_dir=$(dirname $0)
 . ${this_script_dir}/log_functions.sh
 
 main () {
-  exec_command "yarn add graphql apollo-boost react-apollo"
+  # https://www.apollographql.com/docs/react/get-started/#installation
+  exec_command "yarn add apollo-boost react-apollo"
+  # 以下に既に入っているため除外
+  # https://github.com/zeit/next.js/blob/canary/examples/with-apollo/package.json
+  # exec_command "yarn add graphql"
 }
 
 exec_command () {

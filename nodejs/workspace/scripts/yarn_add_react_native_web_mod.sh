@@ -6,8 +6,8 @@ this_script_dir=$(dirname $0)
 . ${this_script_dir}/log_functions.sh
 
 main () {
-  exec_command "yarn add axios"
-  exec_command "yarn add formik"
+  exec_command "yarn add react-native-web"
+  exec_command "yarn add --dev babel-plugin-react-native-web"
 }
 
 exec_command () {
