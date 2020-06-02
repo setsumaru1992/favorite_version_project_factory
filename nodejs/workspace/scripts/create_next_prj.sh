@@ -37,4 +37,9 @@ install_libraries () {
   $this_script_dir/yarn_add_react_native_web_mod.sh
 }
 
+warn_for_develop() {
+  echo "「アプリ名/pages」のようなディレクトリ構成になっていますが、「アプリ名/src/pages」のようなアプリの設定ファイルとアプリケーションファイルを分けるディレクトリ構成をおすすめします。"
+  echo "「yarn graphql-codegen init」でgraphql-codegenが使えるようになります（TODO: ←が不要になるようこのスクリプトで依存ライブラリを入れてcodegen.ymlを生成）"
+}
+
 main "$1"

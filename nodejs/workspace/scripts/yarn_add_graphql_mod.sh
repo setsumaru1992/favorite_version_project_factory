@@ -11,6 +11,7 @@ main () {
   # 以下に既に入っているため除外
   # https://github.com/zeit/next.js/blob/canary/examples/with-apollo/package.json
   # exec_command "yarn add graphql"
+  exec_command "yarn add -D @graphql-codegen/cli"
 }
 
 exec_command () {
