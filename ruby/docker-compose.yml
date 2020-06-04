@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ruby_app_factory:
+    container_name: ruby_app_factory
+    build: .
+    command: "tail -n 1 -f emptyfile_for_keeping_container_alive"
+    volumes:
+      - ./workspace:/root/workspace
