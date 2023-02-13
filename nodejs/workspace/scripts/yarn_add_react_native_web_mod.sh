@@ -7,7 +7,8 @@ this_script_dir=$(dirname $0)
 
 main () {
   exec_command "yarn add react-native-web"
-  exec_command "yarn add --dev babel-plugin-react-native-web"
+  exec_command "yarn add -D babel-plugin-react-native-web"
+  exec_command "yarn add -D @types/react-native @types/react-test-renderer"
 }
 
 exec_command () {

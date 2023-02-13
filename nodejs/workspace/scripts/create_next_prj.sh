@@ -25,16 +25,16 @@ validate () {
 
 create_next_app () {
   app_name=$1
-  npx create-next-app ${app_name} --example with-apollo
+  npx create-next-app ${app_name} --example with-apollo with-apollo-app
   if [ $? != 0 ]; then exit_with_error; fi
 }
 
 install_libraries () {
   log_this_script_message "必要なライブラリをインストールします"
   $this_script_dir/yarn_add_graphql_mod.sh
-  $this_script_dir/yarn_add_useful_mod.sh
   $this_script_dir/yarn_add_typescript_mod.sh
-  $this_script_dir/yarn_add_react_native_web_mod.sh
+  # $this_script_dir/yarn_add_react_native_web_mod.sh
+  $this_script_dir/yarn_add_useful_mod.sh
 }
 
 warn_for_develop() {

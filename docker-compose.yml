@@ -3,14 +3,11 @@ services:
   node_app_factory:
     container_name: node_app_factory
     build: nodejs
-#    command: "tail -n 1 -f emptyfile_for_keeping_container_alive"
     volumes:
       - ./nodejs/workspace:/root/workspace
-#      - ./emptyfile_for_keeping_container_alive:/root/workspace/emptyfile_for_keeping_container_alive
   ruby_app_factory:
     container_name: ruby_app_factory
     build: ruby
 #    command: "tail -n 1 -f emptyfile_for_keeping_container_alive"
     volumes:
       - ./ruby/workspace:/root/workspace
-#      - ./emptyfile_for_keeping_container_alive:/root/workspace/emptyfile_for_keeping_container_alive

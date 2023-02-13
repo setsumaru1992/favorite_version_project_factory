@@ -7,7 +7,7 @@ this_script_dir=$(dirname $0)
 
 main () {
   exec_command "yarn add typescript"
-  exec_command "yarn add --dev @types/jest @types/react @types/react-native @types/react-test-renderer"
+  exec_command "yarn add --dev @types/jest @types/react"
 }
 
 exec_command () {
